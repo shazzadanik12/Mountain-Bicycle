@@ -1,0 +1,192 @@
+/* Typography */
+
+@font-face {
+    font-family: 'OrpheusPro';
+    src: url('../fonts/OrpheusPro.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/OrpheusPro.woff') format('woff'), 
+        url('../fonts/OrpheusPro.ttf')  format('truetype'), 
+        url('../fonts/OrpheusPro.svg#OrpheusPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* // End typography */
+
+
+/*	Resets
+------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; }
+
+ul{list-style: none;} 
+article, aside, canvas, figure, figure img, figcaption, hgroup, footer, header, nav, section, audio, video{display: block;}
+
+blockquote, q{quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content: ''; content: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+b, strong{font-weight: bold;}
+[type="checkbox"], [type="radio"]{box-sizing: border-box; padding: 0;}
+[type="search"]{-webkit-appearance: textfield; outline-offset: -2px;}
+[type="search"]::-webkit-search-decoration{-webkit-appearance: none;}
+::-webkit-file-upload-button{-webkit-appearance: button; font: inherit;}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{border:0; width: auto; height: auto; max-width: 100%; vertical-align: bottom; border-style: none;}
+a,input,select,textarea{outline:none;}
+img{width: auto; height: auto; max-width: 100%; vertical-align: bottom; border-style: none;}
+
+/* Selection colours (easy to forget) */
+img::selection{background: transparent;}
+img::-moz-selection{background: transparent;}
+a{text-decoration: none; display: inline-block;}
+
+input[type='number']{-moz-appearance:textfield;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{-webkit-appearance: none;}
+input::-moz-focus-inner{border:0; padding: 0; }
+input:invalid,
+input:required{box-shadow: none;}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration{display: none;}
+input:required { box-shadow:none; }
+input::-moz-focus-inner{box-shadow:0 0 0px transparent;}
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+/*
+
+Font property css
+
+font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;
+
+*/
+
+body{background: rgb(255,255,255); -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto; font-family: 'OrpheusPro'; font-weight: normal; font-style: normal; font-size: 12px; line-height: 18px;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+/* Global style */
+h1, h2, h3, h4, h5, h6{}
+p{}
+span{}
+dfn, address, em{font-style: normal;}
+label, input[type="submit"]{cursor: pointer;}
+button:focus{outline: none;}
+.btn{-webkit-transition: all .4s ease-in-out; -moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out;}
+.btn.large{}
+.btn.medium{}
+.btn.small{}
+.transparent{}
+
+.mobi{display: none;}
+.desk{display: block;}
+
+.common-wrap{max-width: 1480px; margin: 0 auto; clear: both; padding: 0 20px;}
+
+.centerY { position: absolute; left: 0; right: 0; text-align: center; top: 50%; width: 100%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); transform: translateY(-50%); color: #ffffff; }
+
+/* Flex style */
+.flex-box{display: -webkit-flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between;}
+.flex-vertical-align{-webkit-box-align: center; align-items: center;}
+.flex-content-align{-webkit-align-content: center; -moz-align-content: center; align-content: center;}
+.order-1{-webkit-order: 1; -moz-order: 1; -ms-order: 1; order: 1;}
+.order-2{-webkit-order: 2; -moz-order: 2; -ms-order: 2; order: 2;}
+.flex{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex;}
+/* End Flex style */
+
+section, footer, header{float: left; width: 100%; position: relative;}
+.bg-style{background-position: center center; background-repeat: no-repeat; background-size: cover;}
+body,html{height: 100%;}
+.main-wrap{min-height: 100%; overflow: hidden; position: relative; overflow-x: hidden;}
+/* ======= Villa View wrap ======= */
+.villa-view-wrap {float: left; width: 100%;  z-index: 10; position: relative; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; overflow: hidden;}
+.villa-view-wrap > a{float: left; width: 25.03660322108346%; padding-right: 1px; position: relative; height: 100vh; cursor: pointer; }
+.villa-view-wrap > a:nth-child(4n+3){width: 25.69546120058565%;}
+.villa-view-wrap > a:nth-child(4n+4){width: 24.23133235724744%;}
+.villa-view-wrap > a:after{content: ''; position: absolute; top: 0; right: 0; width: 1px; height: 100%; background-color: rgba(140, 141, 141, .5);}
+.villa-view-wrap > a:nth-child(4n+4):after{display: none}
+.img-hero-background{ position: absolute; width: 100%; height: 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position:center center; background-repeat:no-repeat; top: 0; left: 0; overflow: hidden; opacity: 0; -webkit-transform: translateX(-50px); transform: translateX(-50px); -webkit-transition: all .3s ease; transition: all .3s ease; }
+.show .img-hero-background{ opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); overflow: hidden; } 
+.villa-view-item-content{position: absolute; left: 0; bottom: 0; padding: 0 20px 50px 46px; transition: all .6s cubic-bezier(0.19, 1, 0.23, 1.04)}
+.villa-view-item-content h4, .villa-view-item-content p{font-size: 20px; line-height: 28px; color: #ffffff; ; letter-spacing: 0.2px;}
+.villa-view-item-content h4{font-weight: normal; text-transform: uppercase;}
+.villa-view-item-content address{float: left; width: 100%; padding-bottom: 19px; font-size: 16px; line-height: 22px; color: #ffffff; letter-spacing: 0.12px;}
+.villa-view-item-content span{float: left; width: 100%;}
+.villa-view-item-content figure{float: left; width: 100%; position: relative;}
+.villa-view-item-content img{position: absolute; top: 100%; color: #fff; transform: translate3d(0,100%,0); opacity: 0; transition: all 1s cubic-bezier(.19,1,.22,1); width: 113px !important}
+
+.villa-view-wrap > .active:hover img{opacity: 1; transform: translateZ(0);}
+.villa-view-wrap > a:hover .villa-view-item-content{bottom: 44px;}
+.villa-view-wrap:after{content: ''; position: absolute; top: 0; left: 0; width: 100%; min-height: 100vh; background-image: url(../img/Villa-Lion-View-36.svg); background-position: center center; background-repeat: no-repeat; background-size: cover; z-index: -1}
+
+
+#video-wrap{ width: 100%; height: 100vh; position: fixed; overflow: hidden; left: 0; top: 0; background: rgba(0, 0, 0, .7); z-index: 7; }
+.slider-img{position: relative; z-index: 5;}
+
+
+
+/* ========================================== Responsive style ========================================== */
+
+/*   Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+    .desk{display: none;}
+    .mobi{display: block;}
+    .content-text-wrap .villa-view-item-content h4, .content-text-wrap .villa-view-item-content p{color: #000000}
+    .main-wrap{overflow: auto;}
+
+    /* Beginning Portfolio Gallery wrap */
+    .slider-wrap{float: left; width: 100%; position: relative;}
+    .slider-item{float: left; width: 100%; min-height: 100vh; display: flex !important; align-items: center; text-align: center;}
+    .slider-content{float: left; width: 100%; max-width: 250px; margin: 0 auto; text-align: left;}
+    .slider-content h4, .slider-content address{float: left; width: 100%; color: #ffffff; font-size: 24px; line-height: 32px;}
+    .slider-content h4{font-weight: normal; text-transform: uppercase;}
+    .slider-content address{font-size: 16px; line-height: 24px; margin-top: 10px;}
+    .slider-content span{float: left; width: 100%;}
+    .slider-content figure{float: left; width: 100%; margin-top: 10px;}
+    /* End Portfolio Gallery wrap */
+
+    
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    input[type="text"],input[type="email"],input[type="tel"],input[type="search"],input[type="number"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+}
+
+
